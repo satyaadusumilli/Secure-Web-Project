@@ -27,7 +27,7 @@ const db = mysql.createConnection({
 const router = express.Router();
 
 // vulnurable sqli
-router.post("/getdetails", (req, res) => {
+/** router.post("/getdetails", (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
 
@@ -46,7 +46,7 @@ router.post("/getdetails", (req, res) => {
             }
         }
     });
-});
+}); **/
 
 app.use("/users", router);
 
